@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{EC073FF9-632A-4C0E-9514-8C435ECB5246}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Магазин</RootNamespace>
+    <AssemblyName>Магазин</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="Magas\Corzina.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Magas\Oplata.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Magas\SpasiboZaOplatu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Magas\Vid.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Connect\Connect.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Connect.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Connect\Connect.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Connect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Connect\Connect.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Connect.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Connect\Connection.cs" />
+    <Compile Include="Connect\Reg.cs">
+      <DependentUpon>Connect.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ListView\Spicok.cs" />
+    <Compile Include="Magas\Corzina.xaml.cs">
+      <DependentUpon>Corzina.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Magas\Oplata.xaml.cs">
+      <DependentUpon>Oplata.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Magas\SpasiboZaOplatu.xaml.cs">
+      <DependentUpon>SpasiboZaOplatu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Magas\Vid.xaml.cs">
+      <DependentUpon>Vid.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Pages\AuthorizationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\RegistrationPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pages\AuthorizationPage.xaml.cs">
+      <DependentUpon>AuthorizationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\RegistrationPage.xaml.cs">
+      <DependentUpon>RegistrationPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EntityDeploy Include="Connect\Connect.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Connect.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Connect\Connect.edmx.diagram">
+      <DependentUpon>Connect.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Logo\Shop.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Logo\NewFolder1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\AMORT.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\vozd.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\amortiz.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\remen.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\generator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\radiator.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\masl filtr.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\vod nasos.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\starter.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\gur.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\sceplenie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\colodki.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\torm disci.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\naconech.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\shrus.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\shtamp-disc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\dvornici.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\lobovoe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Korzinafoto\picnic_7489374.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Logo\логотип.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Logo\spasibo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\panel.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\rul.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\magnitola.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Photo\dinamici.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Connect\Connect.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Connect.edmx</DependentUpon>
+      <LastGenOutput>Connect.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Connect\Connect.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Connect.edmx</DependentUpon>
+      <LastGenOutput>Connect.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
