@@ -36,11 +36,11 @@ namespace Магазин.Pages
         }
         private void RegisterUser( string email, string password)
         {
-            Reg users = new Reg();
-            users.Email = email;
-            users.Password = password;
-            Connection.entities.Reg.Add(users);
-            Connection.entities.SaveChanges();
+            //Reg users = new Reg();
+            //users.Email = email;
+            //users.Password = password;
+            //Connection.entities.Reg.Add(users);
+            //Connection.entities.SaveChanges();
         }
     }
 }

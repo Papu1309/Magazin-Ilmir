@@ -180,79 +180,10 @@
     <Folder Include="Logo\NewFolder1\" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Photo\AMORT.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\vozd.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\amortiz.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\remen.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\generator.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\radiator.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\masl filtr.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\vod nasos.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\starter.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\gur.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\sceplenie.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\colodki.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\torm disci.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\naconech.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\shrus.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\shtamp-disc.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\dvornici.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\lobovoe.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Korzinafoto\picnic_7489374.png" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Logo\логотип.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Logo\spasibo.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\panel.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\rul.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\magnitola.jpg" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Photo\dinamici.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
@@ -268,6 +199,23 @@
       <DependentUpon>Connect.edmx</DependentUpon>
       <LastGenOutput>Connect.cs</LastGenOutput>
     </Content>
+    <Resource Include="Logo\magaz.jpg" />
+    <Resource Include="Logo\spasibo za oplatu.jpg" />
+    <Resource Include="Photo\chainic.jpg" />
+    <Resource Include="Photo\krushka.jpg" />
+    <Resource Include="Photo\loshka.jpg" />
+    <Resource Include="Photo\postkomplekt.jpg" />
+    <Resource Include="Photo\tarelka.jpg" />
+    <Resource Include="Photo\antiseptic.jpg" />
+    <Resource Include="Photo\aromatizator.jpg" />
+    <Resource Include="Photo\avtochehli.jpg" />
+    <Resource Include="Photo\chehol.jpg" />
+    <Resource Include="Photo\kolpaki.jpg" />
+    <Resource Include="Photo\noski.jpg" />
+    <Resource Include="Photo\planshet.jpg" />
+    <Resource Include="Photo\poroshok.jpg" />
+    <Resource Include="Photo\telephone.jpg" />
+    <Resource Include="Photo\igrushka.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

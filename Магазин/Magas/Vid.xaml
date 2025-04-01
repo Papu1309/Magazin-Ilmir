@@ -8,22 +8,21 @@
       d:DesignHeight="450" d:DesignWidth="800" Background="Coral"
       Title="Vid" >
     <Grid Margin="0,73,0,0" Background="Coral">
-        <TextBlock Text="Автозапчасти"  HorizontalAlignment="Center"  FontSize="30" Margin="0,-63,0,382" />
-        <Image Source="/Logo/логотип.jpg" HorizontalAlignment="Right" Width="1320"></Image>
-        <ListView x:Name="SpicokListWiew" HorizontalAlignment="Left" Width="1006" SelectionChanged="SpicokListWiew_SelectionChanged">
+        <TextBlock Text="Список товаров"  HorizontalAlignment="Center"  FontSize="30" Margin="0,-63,0,382" FontWeight="Bold" FontStyle="Italic"/>
+        <ListView FontSize="25" FontFamily="Papyrus" FontStyle="Italic" x:Name="SpicokListWiew" SelectionChanged="SpicokListWiew_SelectionChanged" Margin="10,0,10,0">
             <ListView.View>
-                <GridView >
+                <GridView>
                     <GridViewColumn Header="Выбрать товар" Width="300" >
-                        <GridViewColumn.CellTemplate>
-                            <DataTemplate>
-                                <StackPanel>
+                        <GridViewColumn.CellTemplate >
+                            <DataTemplate >
+                                <StackPanel >
                                     <CheckBox IsChecked="{Binding IsSelected}" />
-                                    <Image Source="{Binding Foto}" ></Image>
+                                    <Image Width="200" Height="200" Source="{Binding Foto}" ></Image>
                                 </StackPanel>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
-                    <GridViewColumn Header="Название" Width="200" DisplayMemberBinding="{Binding Name}"/>
+                    <GridViewColumn  Header="Название" Width="300"  DisplayMemberBinding="{Binding Name}"/>
                     <GridViewColumn Header="Стоимость" Width="200" DisplayMemberBinding="{Binding Price}" />
                 </GridView>
             </ListView.View>

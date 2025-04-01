@@ -6,9 +6,9 @@
       xmlns:local="clr-namespace:Магазин.Magas"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="SpasiboZaOplatu">
+      Title="SpasiboZaOplatu" >
 
     <Grid>
-        <Image Source="/Logo/spasibo.jpg"/>
+        <Image Source="/Logo/spasibo za oplatu.jpg"/>
     </Grid>
 </Page>

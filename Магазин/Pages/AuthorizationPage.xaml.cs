@@ -30,19 +30,19 @@ namespace Магазин.Pages
         public AuthorizationPage()
         {
             InitializeComponent();
-            users = Connection.entities.Reg.ToList();
+            //users = Connection.entities.Reg.ToList();
         }
 
         private void btnVxod_Click(object sender, RoutedEventArgs e)
         {
-            if (loginTb != null && ParolTb != null) 
-            {
-                var NewUser = users.Where(users => users.Email == loginTb.Text && users.Password == ParolTb.Text).FirstOrDefault();
-                if (NewUser != null) 
-                {
-                    NavigationService.Navigate(new aa());
-                }
-            }
+            //if (loginTb != null && ParolTb != null) 
+            //{
+            //    var NewUser = users.Where(users => users.Email == loginTb.Text && users.Password == ParolTb.Text).FirstOrDefault();
+            //    if (NewUser != null) 
+            //    {
+            //        NavigationService.Navigate(new aa());
+            //    }
+            //}
          
         }
 
