@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Corzina" Height="450" Width="800" >
     <Grid>
-        <ListView FontSize="25" FontFamily="Papyrus" FontStyle="Italic" x:Name="SelectedSpicoksListView" Margin="0,0,0,30">
+        <ListView FontSize="25" FontStyle="Italic" x:Name="SelectedSpicoksListView" Margin="0,0,0,30">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Название" Width="300" DisplayMemberBinding="{Binding Name}" />

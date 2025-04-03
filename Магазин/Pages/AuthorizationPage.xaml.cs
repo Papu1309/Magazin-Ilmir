@@ -24,7 +24,6 @@ namespace Магазин.Pages
     /// </summary>
     public partial class AuthorizationPage : Page
     {
-        //private const string ConnectionString = "Server=your_server;Database=OnlineShop;Integrated Security=True;";
         public static List<Reg> users { get; set; }
         
         public AuthorizationPage()
@@ -48,7 +47,6 @@ namespace Магазин.Pages
 
         private void btnReg_Click(object sender, RoutedEventArgs e)
         {
-           
             NavigationService.Navigate(new RegistrationPage());
         }
     }

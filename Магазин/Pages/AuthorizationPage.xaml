@@ -6,7 +6,7 @@
       xmlns:local="clr-namespace:Магазин.Pages"
       mc:Ignorable="d" 
       d:DesignHeight="1080" d:DesignWidth="1920"
-      Title="AuthorizationPage" Background="Green" >
+      Title="AuthorizationPage" Background="Beige" >
 
     <Grid>
         <Grid.ColumnDefinitions>
@@ -36,7 +36,7 @@
         />
 
         <TextBlock Text="Авторизация"
-               FontSize="33"
+               FontSize="40"
                VerticalAlignment="Center"
                Grid.Row="1"
                Grid.Column="2"
@@ -89,7 +89,7 @@
             FontSize="22"
             Height="50" Content="Войти"
             FontFamily="Calibri"
-            Background="Gray" Click="btnVxod_Click"/>
+            Background="Green" Click="btnVxod_Click"/>
         <Button x:Name="btnReg" Grid.Column="2"
             Grid.Row="5"       
             Grid.ColumnSpan="2"
