@@ -25,9 +25,7 @@ namespace Магазин.Magas
         {
 
             InitializeComponent();
-            //SelectedSpicoksListView.ItemsSource = selectedSpicoks;
             SelectedSpicoksListView.ItemsSource = selectedSpicoks;
-            // Вычисляем сумму выбранных товаров
             int totalAmount = selectedSpicoks.Sum(p => p.Price);
             txbCarcul.Text = $"Общая сумма: {totalAmount} руб";
         }
@@ -38,7 +36,6 @@ namespace Магазин.Magas
             NavigationWindow nw = new NavigationWindow();
             nw.Content = new Doelen();
             nw.ShowDialog();
-            //nw.Show();
         }
 
         

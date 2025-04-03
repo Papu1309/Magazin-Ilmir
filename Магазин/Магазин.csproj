@@ -199,6 +199,11 @@
       <DependentUpon>Connect.edmx</DependentUpon>
       <LastGenOutput>Connect.cs</LastGenOutput>
     </Content>
+    <Resource Include="Photo\nauchh.png" />
+    <Resource Include="Photo\Noj2.png" />
+    <Resource Include="Photo\Wilka.png" />
+    <Resource Include="Photo\Woda.png" />
+    <Resource Include="Photo\zaradka.jpg" />
     <Resource Include="Logo\magaz.jpg" />
     <Resource Include="Logo\spasibo za oplatu.jpg" />
     <Resource Include="Photo\chainic.jpg" />
