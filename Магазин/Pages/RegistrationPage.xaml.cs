@@ -39,8 +39,8 @@ namespace Магазин.Pages
             Reg users = new Reg();
             users.Email = email;
             users.Password = password;
-            Connection.entities.Reg.Add(users);
-            Connection.entities.SaveChanges();
+            Connection1.entities.Reg.Add(users);
+            Connection1.entities.SaveChanges();
         }
     }
 }

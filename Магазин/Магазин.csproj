@@ -88,24 +88,24 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Connect\Connect.Context.cs">
+    <Compile Include="Connect\Connect1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Connect.Context.tt</DependentUpon>
+      <DependentUpon>Connect1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Connect\Connect.cs">
+    <Compile Include="Connect\Connect1.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Connect.tt</DependentUpon>
+      <DependentUpon>Connect1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Connect\Connect.Designer.cs">
+    <Compile Include="Connect\Connect1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Connect.edmx</DependentUpon>
+      <DependentUpon>Connect1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Connect\Connection.cs" />
+    <Compile Include="Connect\Connection1.cs" />
     <Compile Include="Connect\Reg.cs">
-      <DependentUpon>Connect.tt</DependentUpon>
+      <DependentUpon>Connect1.tt</DependentUpon>
     </Compile>
     <Compile Include="ListView\Spicok.cs" />
     <Compile Include="Magas\Corzina.xaml.cs">
@@ -157,12 +157,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Connect\Connect.edmx">
+    <EntityDeploy Include="Connect\Connect1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Connect.Designer.cs</LastGenOutput>
+      <LastGenOutput>Connect1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Connect\Connect.edmx.diagram">
-      <DependentUpon>Connect.edmx</DependentUpon>
+    <None Include="Connect\Connect1.edmx.diagram">
+      <DependentUpon>Connect1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -189,15 +189,15 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Connect\Connect.Context.tt">
+    <Content Include="Connect\Connect1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Connect.edmx</DependentUpon>
-      <LastGenOutput>Connect.Context.cs</LastGenOutput>
+      <DependentUpon>Connect1.edmx</DependentUpon>
+      <LastGenOutput>Connect1.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Connect\Connect.tt">
+    <Content Include="Connect\Connect1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Connect.edmx</DependentUpon>
-      <LastGenOutput>Connect.cs</LastGenOutput>
+      <DependentUpon>Connect1.edmx</DependentUpon>
+      <LastGenOutput>Connect1.cs</LastGenOutput>
     </Content>
     <Resource Include="Photo\nauchh.png" />
     <Resource Include="Photo\Noj2.png" />

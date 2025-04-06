@@ -29,7 +29,7 @@ namespace Магазин.Pages
         public AuthorizationPage()
         {
             InitializeComponent();
-            users = Connection.entities.Reg.ToList();
+            users = Connection1.entities.Reg.ToList();
         }
 
         private void btnVxod_Click(object sender, RoutedEventArgs e)
