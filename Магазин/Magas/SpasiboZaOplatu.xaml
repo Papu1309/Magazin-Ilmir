@@ -9,6 +9,7 @@
       Title="SpasiboZaOplatu" >
 
     <Grid>
-        <Image Source="/Logo/spasibo za oplatu.jpg"/>
+        <Image Source="/Logo/spasibo za oplatu.jpg" Margin="0,40,0,49"/>
+        <TextBlock Text="Ваш заказ будет ждать вас по указанному адресу: г.Казань,Даурская улица, 16Б" HorizontalAlignment="Center"  FontSize="23" Margin="0,0,0,415" FontWeight="Bold" ></TextBlock>
     </Grid>
 </Page>

@@ -25,7 +25,7 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <TextBlock Text="Магазин"
+        <TextBlock Text="Магазин ILMIR-ХАН"
         FontSize="50"
         VerticalAlignment="Center"
         Grid.Column="2"
@@ -97,5 +97,6 @@
             Height="50" Content="Регистрация"
             FontFamily="Calibri"
             Background="Red" Click="btnReg_Click" />
+        <TextBlock Text="                         Возникла ошибка? Можно написать или позвонить по номеру +79393301172" HorizontalAlignment="Center" TextWrapping="Wrap" Grid.Column="5" Grid.Row="4" Grid.RowSpan="2" FontSize="30" FontStyle="Italic" ></TextBlock>
     </Grid>
 </Page>
